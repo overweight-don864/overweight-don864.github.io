@@ -20,6 +20,22 @@
   font-display: swap;
 }
 
+/* Body / running text — a clean, evenly-drawn neutral sans. Railway (our free
+   Johnston homage) is reserved for the brand wordmark + titles only. */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-400.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('/fonts/IBMPlexSans-500.woff2') format('woff2');
+  font-weight: 500;
+  font-display: swap;
+}
+
 @theme {
   /* Surfaces (very dark blue, straight from the plugin base) */
   --color-base: #181d2e;
@@ -35,7 +51,7 @@
   --color-neutral-control: #b4bac6;
 
   --font-display: 'Railway', ui-sans-serif, system-ui, sans-serif;
-  --font-sans: 'Railway', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
